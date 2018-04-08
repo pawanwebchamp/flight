@@ -1,12 +1,12 @@
 <div ng-show="searchResult">
   <div ng-show="loading"><img src="img/loading.gif"></div>
 <div>
-  <span class="flight-info">Origin > Destination > Origin</span>
+  <span class="flight-info">{{src}} > {{dest}} > Origin</span>
   <span class="flight-timing">Depart:{{flights.date}}</span>
 
 <div class="search-result">
 
-  <div class="flight-list" ng-repeat="flight in flights | filter: query1">
+  <div class="flight-list" ng-repeat="flight in flights">
     <div class="flight-detail">
       <h4>Rs. {{flight.amount}}</h4>
       <ul>
@@ -40,7 +40,7 @@
 
     </div>
     <div class="thumbnail">
-      <img ng-src="img/icon.png">
+      <img ng-src="app/img/icon.png">
       <button class="search-btn">Book this flight</button>
     </div>
   </div>

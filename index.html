@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" ng-app="flightApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Find Your Flight</title>
+  <link rel="stylesheet" href="app/css/app.css" />
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-route/angular-route.min.js"></script>
+  <script src="app/js/app.module.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper" ng-controller="flightController">
+    <div class="header">
+      <h1>Flight Search Engine</h1>
+    </div>
+    <div class="left-col">
+      <div class="sidebar">
+        <ul class="tabs">
+          <li>
+            <label for="check1">
+
+              <input id="check1" type="radio" name="trip" value="oneway" data-ng-checked="1" ng-model="ReturnShow" ng-value="false" />
+              <strong>One way</strong>
+            </label>
+          </li>
+          <li>
+            <label for="check2">
+
+              <input id="check2" type="radio" name="trip" value="return" ng-model="ReturnShow" ng-value="true" />
+              <strong>Return</strong>
+            </label>
+          </li>
+        </ul>
+        <form novalidate name="myForm">
+          <div>
+            <label for="FromCity" title="From date">
+              <strong>From</strong>
+            </label>
+            <input type="text" name="origin" class="form-control" placeholder="Enter Origin City" required>
+          </div>
+          <div>
+            <label for="ToCity" title="ToCity">
+              <strong>To</strong>
+            </label>
+            <input type="text" name="destination" class="form-control" placeholder="Enter Destinaton City">
+          </div>
+          <div>
+            <label for="DepartDate" title="Depature date">
+              <strong>Depart on</strong>
+            </label>
+            <input type="date" name="depart" class="form-control" placeholder="Departure Date">
+          </div>
+          <div ng-show="ReturnShow">
+            <label for="ReturnDate" title="Return Date">
+              <strong>Return on</strong>
+            </label>
+            <input type="date" name="return" class="form-control" placeholder="Return Date">
+          </div>
+          <div>
+            <label for="Passenges" title="Passenges">
+              <strong>Passengers</strong>
+            </label>
+            <input type="text" name="passenger" class="form-control" placeholder="Passengers">
+          </div>
+          <div>
+            <a class="search-btn" href="#!/flight" ng-click="SearchFlight()">Search</a>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="range-section">
+        <h3>Refine flight search</h3>
+        <input type="range" name="range" min="0" max="10000">
+       
+      </div>
+    </div>
+    <div class="right-col">
+
+      <div class="flight-summary" ng-view></div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>

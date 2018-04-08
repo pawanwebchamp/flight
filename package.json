@@ -1,0 +1,19 @@
+{
+  "name": "flight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.11",
+    "angular-route": "^1.6.9"
+  }
+}

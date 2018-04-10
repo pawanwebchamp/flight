@@ -20,6 +20,7 @@ app.controller('flightController', ['$scope', '$http', function ($scope, $http) 
         $scope.searchResult = true;
         $scope.flightinfo = true;
         $scope.loading = true;
+        $scope.hideBanner = true;
         $http.get('app/flight/flight.json')
             .then(function (response) {
                 var allFlights = response.data;
@@ -46,7 +47,8 @@ app.controller('flightController', ['$scope', '$http', function ($scope, $http) 
                 
                 
                 $scope.flights = returnsDate;
-               $scope.loading = false;
+                $scope.loading = false;
+               
             });
     }
 

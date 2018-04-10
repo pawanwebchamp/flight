@@ -18,16 +18,16 @@ body{
 }
 
 .wrapper .left-col, .wrapper .right-col {
-float: left;
-position: relative;
+    float: left;
+    position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
 }
 
 .wrapper .header{
-   width: 100%;
-   padding-right: 15px;
+    width: 100%;
+    padding-right: 15px;
     padding-left: 15px;
     border: 1px solid #eee;
     background-color: #f1f1f1;
@@ -35,22 +35,45 @@ position: relative;
     box-shadow: -2px 0 2px #eee, 2px 0 2px #eee;
 }
 .wrapper .left-col{
- width: 33.33333333%;
- border-right: none;
+    width: 33.33333333%;
 }
 
 .wrapper .right-col{
     width:  66.66666667%;
 }
 
+.wrapper .searchflight {
+    text-align: center;
+}
+
+.wrapper .searchflight h2{
+    background: #235a98;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+.wrapper .noData h1{
+    padding: 12px 20px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    text-align: center;
+}
+
 .wrapper .tabs{
     padding: 0;
     margin-top: 0;
 }
+
 .wrapper .tabs li{
     display: inline-block;
     list-style-type: none;
-
 }
 
 .wrapper input[name="origin"], .wrapper input[name="destination"]{
@@ -67,8 +90,8 @@ position: relative;
 }
 
 .wrapper .tabs li .active{
-  background-color: #505050;
-  color: #fff;
+    background-color: #505050;
+     color: #fff;
 }
 
 .wrapper .form-control{
@@ -82,13 +105,14 @@ position: relative;
     margin: 5px 0 15px 0;
     width: 100%;
 }
+
 .wrapper .sidebar, .wrapper .range-section{
-margin: 15px 0;
-padding: 20px;
--webkit-box-shadow: -2px 0 2px #eee, 2px 0 2px #eee;
-box-shadow: -2px 0 2px #eee, 2px 0 2px #eee;
-background: #235a98;
-color: #fff;
+    margin: 15px 0;
+    padding: 20px;
+    -webkit-box-shadow: -2px 0 2px #eee, 2px 0 2px #eee;
+    box-shadow: -2px 0 2px #eee, 2px 0 2px #eee;
+    background: #235a98;
+    color: #fff;
 }
 
 .wrapper .range-section h3{
@@ -96,24 +120,26 @@ color: #fff;
     font-size: 18px;
     font-weight: normal;
 }
+
 .wrapper .searchform label{
     font-size: 12px;
 }
+
 .wrapper .info-flight .flight-info{
     font-size: 24px;
     font-weight: bold;
 }
 
 .wrapper .search-btn{
-color: #fff;
-background-color: #eb2026;
-border-color: #bc0006;
-padding: 11px 20px;
-border: transparent;
-margin-top: 20px;
-cursor: pointer;
-text-decoration: none;
-display: inline-block;
+    color: #fff;
+    background-color: #eb2026;
+    border-color: #bc0006;
+    padding: 11px 20px;
+    border: transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .wrapper .search-btn:hover{
@@ -124,7 +150,7 @@ display: inline-block;
     padding: 15px 0 15px 0;
 }
 .wrapper .flight-summary .flight-info{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: capitalize;
     margin-bottom: 15px;
@@ -136,9 +162,11 @@ display: inline-block;
     color: #888;
     display: block;
 }
+
 .wrapper .timings{
     float: right;
 }
+
 .wrapper .flight-list {
     display: inline-block;
     width: 100%;
@@ -219,19 +247,24 @@ display: inline-block;
     display: block;
     margin-bottom: 10px;
 }
+
 .wrapper md-slider{
     min-width: 110px;
 }
+
 .wrapper md-slider-container>:first-child:not(md-slider){
     margin-right: 0;
 }
+
 .wrapper md-slider-container>:last-child:not(md-slider){
     margin-left: 0;
 }
+
 .wrapper md-slider-container md-input-container input[type=number]{
     width: 80px;
     color: #fff;
 }
+
 .wrapper md-icon, .wrapper .md-datepicker-input {
     color: rgb(250, 250, 250);
 }
@@ -239,25 +272,23 @@ display: inline-block;
 .wrapper .md-datepicker-triangle-button .md-datepicker-expand-triangle{
 border-top-color: rgb(250, 250, 250);
 }
+
 @media (min-width: 320px){
     .wrapper {
         max-width: 320px;
-    }
-  
+    }  
 }
 
 @media (min-width: 480px){
     .wrapper {
         max-width: 370px;
     }
-   
 }
 
 @media (min-width: 576px){
     .wrapper {
         max-width: 540px;
     }
-    
 }
 
 
@@ -265,7 +296,6 @@ border-top-color: rgb(250, 250, 250);
     .wrapper {
         max-width: 720px;
     }
-    
 }
 
 @media (max-width: 992px)
@@ -277,6 +307,14 @@ border-top-color: rgb(250, 250, 250);
     width: 100%;
     float: none;
     border: none;
+}
+.wrapper .header h1{
+    font-size: 24px;
+    display: inline-block;
+}
+
+.wrapper .searchflight h2{
+    font-size: 24px;
 }
 }
 

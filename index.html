@@ -27,24 +27,24 @@
           <li>
             <label for="check1">
 
-              <input id="check1" type="radio" name="trip" value="oneway" data-ng-checked="1" ng-model="ReturnShow" ng-value="false" />
-              One way
+              <input id="check1" type="radio" name="trip" value="oneway" data-ng-checked="1" ng-model="ReturnShow" ng-value="false" /> One way
             </label>
           </li>
           <li>
             <label for="check2">
 
-              <input id="check2" type="radio" name="trip" value="return" ng-model="ReturnShow" ng-value="true" />
-              Return</strong>
+              <input id="check2" type="radio" name="trip" value="return" ng-model="ReturnShow" ng-value="true" /> Return
+              </strong>
             </label>
           </li>
         </ul>
         <form novalidate name="myForm" class="searchform">
           <div>
             <label for="FromCity" title="From date">
-             From
+              From
             </label>
-            <input type="text" name="origin" class="form-control" placeholder="Enter Origin City" ng-model="src" ng-keyup="complete(src)" required>
+            <input type="text" name="origin" class="form-control" placeholder="Enter Origin City" ng-model="src" ng-keyup="complete(src)"
+              required>
             <ul class="list-group">
               <li class="list-group-item" ng-repeat="citydata in filterCity" ng-click="fillTextbox(citydata)">{{citydata}}</li>
             </ul>
@@ -53,7 +53,7 @@
             <label for="ToCity" title="ToCity">
               To
             </label>
-            <input type="text" name="destination" class="form-control" placeholder="Enter Destinaton City" ng-model="dest" ng-keyup="retcomplete(dest)">
+            <input type="text" name="destination" class="form-control" placeholder="Enter Destination City" ng-model="dest" ng-keyup="retcomplete(dest)">
             <ul class="list-group">
               <li class="list-group-item" ng-repeat="returncitydata in filterReturnCity" ng-click="returnfillTextbox(returncitydata)">{{returncitydata}}</li>
             </ul>
@@ -97,7 +97,7 @@
           </md-input-container>
         </md-slider-container>
 
-       
+
         <!-- <md-slider ng-model="disabled1" aria-label="Disabled 1" flex md-discrete ng-readonly="readonly"></md-slider>
   
         <md-input-container>
@@ -110,7 +110,10 @@
       </div>
     </div>
     <div class="right-col">
-
+      <div class="searchflight" ng-hide="hideBanner">
+        <h2>Book Your Flight</h2>
+        <img ng-src="app/img/icon.png">
+      </div>
       <div class="flight-summary" ng-view></div>
     </div>
 

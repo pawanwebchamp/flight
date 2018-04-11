@@ -1,10 +1,5 @@
 var app = angular.module('flightApp', ['ngRoute', 'ngMessages', 'ngMaterial']);
-// app.component('myComponent', {
-//  templateUrl: 'flight/flight-list.html',
-//  controller: ('flightController', function($scope){
-// })
 
-// });
 app.config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
     $routeProvider.when('/flight', {
@@ -15,8 +10,8 @@ app.config(['$locationProvider', '$routeProvider', function ($locationProvider, 
 
 app.controller('flightController', ['$scope', '$http', function ($scope, $http) {
     var ctrl = this;
+    $scope.price = 1000;
     $scope.SearchFlight = function () {
-        
         $scope.searchResult = true;
         $scope.flightinfo = true;
         $scope.loading = true;
@@ -24,29 +19,36 @@ app.controller('flightController', ['$scope', '$http', function ($scope, $http) 
         $http.get('app/flight/flight.json')
             .then(function (response) {
                 var allFlights = response.data;
-                var selectedDesination;
-                var selectedDate;
-                var returnsDate;
-                var slectedSource = allFlights.filter((obj)=>obj.origin == $scope.src);
-                if(!$scope.dest){
-                    selectedDesination = slectedSource }
-                else {
-                   selectedDesination = slectedSource.filter((obj)=>obj.destination == $scope.dest);
-                }
-                if(!ctrl.myDate){
-                    selectedDate = selectedDesination }
-                else {
-                    selectedDate = selectedDesination.filter((obj)=>new Date(obj.date) >= ctrl.myDate);
-                }
+                var filteredFlight = allFlights.filter(function(obj){
+                    var flag = false;
+                        if($scope.src){
+                            flag = obj.origin == $scope.src;
+                        }
+                        if($scope.dest){
+                            flag = flag && obj.destination == $scope.dest;
+                        }
 
-                if(!ctrl.returnDate){
-                    returnsDate = selectedDesination }
-                else {
-                    returnsDate = selectedDesination.filter((obj)=>new Date(obj.returndate) >= ctrl.returningDate);
-                }
+                        if($scope.myDate){
+                            flag = flag && new Date(obj.date) >= ctrl.myDate;
+                        }
+
+                        if($scope.returningDate){
+                            flag = flag && new Date(obj.returndate) >= ctrl.returningDate;
+                        }
+                        
+                        if($scope.passenger){
+                            flag = flag && obj.availabilty >= $scope.passenger;
+                        }
+
+                        if($scope.price){
+                            flag = flag && obj.amount <= $scope.price;
+                        }
+
+                        return flag;
                 
-                
-                $scope.flights = returnsDate;
+                });
+
+                $scope.flights = filteredFlight;
                 $scope.loading = false;
                
             });
@@ -56,15 +58,9 @@ app.controller('flightController', ['$scope', '$http', function ($scope, $http) 
     this.returningDate = new Date();
     this.isOpen = false;
 
-    // $scope.color = {
-    //     red: Math.floor(Math.random() * 255)
-    //   };
-    
-    //  $scope.disabled1 = Math.floor(Math.random() * 100);
 
       $scope.cityList = ["Allahabad", "Bangalore", "Delhi", "Kolkata", "Pune", "Mumbai", "Varanasi"];
       $scope.complete=function(string){
-          
           var output=[];
           angular.forEach($scope.cityList,function(src){
               if(src.toLowerCase().indexOf(string.toLowerCase())>=0){
@@ -80,7 +76,6 @@ app.controller('flightController', ['$scope', '$http', function ($scope, $http) 
 
       $scope.returnCityList = ["Allahabad", "Bangalore", "Delhi", "Kolkata", "Pune", "Mumbai", "Varanasi"];
       $scope.retcomplete=function(string){
-          
           var output=[];
           angular.forEach($scope.returnCityList,function(dest){
               if(dest.toLowerCase().indexOf(string.toLowerCase())>=0){

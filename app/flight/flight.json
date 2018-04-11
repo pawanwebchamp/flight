@@ -12,7 +12,7 @@
         "date": "2018-04-10",
         "returndate": "2018-04-12",
         "amount": "2300.00",
-        "availabilty":3 
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-206",
@@ -25,8 +25,9 @@
             "arrive": "10:30 AM"
         },
         "date": "2017-11-01",
+        "returndate": "2018-04-12",
         "amount": "990.00",
-        "availabilty":2 
+        "availabilty":"2" 
     },
     {
         "flightNo": "AL-206",
@@ -39,8 +40,9 @@
             "arrive": "10:30 AM"
         },
         "date": "2017-11-01",
+        "returndate": "2018-04-12",
         "amount": "990.00",
-        "availabilty":3 
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-217",
@@ -53,7 +55,10 @@
             "arrive": "10:30 AM"
         },
         "date": "2017-11-01",
-        "amount": "850.00"
+        "returndate": "2018-04-12",
+        "amount": "990.00",
+        "availabilty":"3" 
+        
     },
     {
         "flightNo": "AL-333",
@@ -67,7 +72,8 @@
         },
         "date": "2017-11-01",
         "returndate": "2018-04-12",
-        "amount": "990.00"
+        "amount": "990.00",
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-204",
@@ -80,7 +86,9 @@
             "arrive": "10:30 AM"
         },
         "date": "2017-11-01",
-        "amount": "1000.00"
+        "returndate": "2018-04-12",
+        "amount": "1000.00",
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-102",
@@ -93,7 +101,9 @@
             "arrive": "10:30 AM"
         },
         "date": "2017-11-01",
-        "amount": "1000.00"
+        "returndate": "2018-04-12",
+        "amount": "1000.00",
+        "availabilty":"5" 
     },
     {
         "flightNo": "AL-102",
@@ -107,7 +117,8 @@
         },
         "date": "2018-04-10",
         "returndate": "2018-04-12",
-        "amount": "1000.00"
+        "amount": "1000.00",
+        "availabilty":"2" 
     },
     {
         "flightNo": "IN-699",
@@ -119,8 +130,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "1600.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "1600.00",
+        "availabilty":"2" 
     },
     {
         "flightNo": "IN-699",
@@ -132,8 +145,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "1600.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "1600.00",
+        "availabilty":"3" 
     },
     {
         "flightNo": "IN-714",
@@ -145,8 +160,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "1950.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "1950.00",
+        "availabilty":"1" 
     },
     {
         "flightNo": "IN-704",
@@ -158,8 +175,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "1600.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "1600.00",
+        "availabilty":"4" 
     },
     {
         "flightNo": "IN-690",
@@ -171,8 +190,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "1300.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "1300.00",
+        "availabilty":"1" 
     },
     {
         "flightNo": "IN-690",
@@ -184,8 +205,115 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "1599.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "1599.00",
+        "availabilty":"1" 
+    },
+    {
+        "flightNo": "AL-203",
+        "origin": "Pune",
+        "destination": "Delhi",
+        "originCityCode": "PNQ",
+        "destinationCityCode": "DLI",
+        "time": {
+            "depart": " 08:00 AM",
+            "arrive": "10:30 AM"
+        },
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "2500.00",
+        "availabilty":"1" 
+    },
+    {
+        "flightNo": "AL-203",
+        "origin": "Pune",
+        "destination": "Delhi",
+        "originCityCode": "PNQ",
+        "destinationCityCode": "DLI",
+        "time": {
+            "depart": " 08:00 AM",
+            "arrive": "10:30 AM"
+        },
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "1500.50",
+        "availabilty":"1" 
+    },
+    {
+        "flightNo": "AL-203",
+        "origin": "Pune",
+        "destination": "Delhi",
+        "originCityCode": "PNQ",
+        "destinationCityCode": "DLI",
+        "time": {
+            "depart": " 08:00 AM",
+            "arrive": "10:30 AM"
+        },
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "6000.00",
+        "availabilty":"2" 
+    },
+    {
+        "flightNo": "AL-203",
+        "origin": "Pune",
+        "destination": "Delhi",
+        "originCityCode": "PNQ",
+        "destinationCityCode": "DLI",
+        "time": {
+            "depart": " 08:00 AM",
+            "arrive": "10:30 AM"
+        },
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "5000.00",
+        "availabilty":"1" 
+    },
+    {
+        "flightNo": "AL-203",
+        "origin": "Pune",
+        "destination": "Delhi",
+        "originCityCode": "PNQ",
+        "destinationCityCode": "DLI",
+        "time": {
+            "depart": " 08:00 AM",
+            "arrive": "10:30 AM"
+        },
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "5300.00",
+        "availabilty":"3" 
+    },
+    {
+        "flightNo": "AL-203",
+        "origin": "Pune",
+        "destination": "Delhi",
+        "originCityCode": "PNQ",
+        "destinationCityCode": "DLI",
+        "time": {
+            "depart": " 08:00 AM",
+            "arrive": "10:30 AM"
+        },
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "5185.75",
+        "availabilty":"2" 
+    },
+    {
+        "flightNo": "AL-203",
+        "origin": "Pune",
+        "destination": "Delhi",
+        "originCityCode": "PNQ",
+        "destinationCityCode": "DLI",
+        "time": {
+            "depart": " 08:00 AM",
+            "arrive": "10:30 AM"
+        },
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "4545.00",
+        "availabilty":"2" 
     },
     {
         "flightNo": "AL-203",
@@ -198,7 +326,9 @@
             "arrive": "10:30 AM"
         },
         "date": "2017-11-01",
-        "amount": "2500.00"
+        "returndate": "2018-04-12",
+        "amount": "6545.00",
+        "availabilty":"1" 
     },
     {
         "flightNo": "AL-203",
@@ -210,8 +340,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "1500.50"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "3400.00",
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-203",
@@ -223,8 +355,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "6000.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "4300.00",
+        "availabilty":"5" 
     },
     {
         "flightNo": "AL-203",
@@ -236,99 +370,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "5000.00"
-    },
-    {
-        "flightNo": "AL-203",
-        "origin": "Pune",
-        "destination": "Delhi",
-        "originCityCode": "PNQ",
-        "destinationCityCode": "DLI",
-        "time": {
-            "depart": " 08:00 AM",
-            "arrive": "10:30 AM"
-        },
-        "date": "2017-11-01",
-        "amount": "5300.00"
-    },
-    {
-        "flightNo": "AL-203",
-        "origin": "Pune",
-        "destination": "Delhi",
-        "originCityCode": "PNQ",
-        "destinationCityCode": "DLI",
-        "time": {
-            "depart": " 08:00 AM",
-            "arrive": "10:30 AM"
-        },
-        "date": "2017-11-01",
-        "amount": "5185.75"
-    },
-    {
-        "flightNo": "AL-203",
-        "origin": "Pune",
-        "destination": "Delhi",
-        "originCityCode": "PNQ",
-        "destinationCityCode": "DLI",
-        "time": {
-            "depart": " 08:00 AM",
-            "arrive": "10:30 AM"
-        },
-        "date": "2017-11-01",
-        "amount": "4545.00"
-    },
-    {
-        "flightNo": "AL-203",
-        "origin": "Pune",
-        "destination": "Delhi",
-        "originCityCode": "PNQ",
-        "destinationCityCode": "DLI",
-        "time": {
-            "depart": " 08:00 AM",
-            "arrive": "10:30 AM"
-        },
-        "date": "2017-11-01",
-        "amount": "6545.00"
-    },
-    {
-        "flightNo": "AL-203",
-        "origin": "Pune",
-        "destination": "Delhi",
-        "originCityCode": "PNQ",
-        "destinationCityCode": "DLI",
-        "time": {
-            "depart": " 08:00 AM",
-            "arrive": "10:30 AM"
-        },
-        "date": "2017-11-01",
-        "amount": "3400.00"
-    },
-    {
-        "flightNo": "AL-203",
-        "origin": "Pune",
-        "destination": "Delhi",
-        "originCityCode": "PNQ",
-        "destinationCityCode": "DLI",
-        "time": {
-            "depart": " 08:00 AM",
-            "arrive": "10:30 AM"
-        },
-        "date": "2017-11-01",
-        "amount": "4300.00"
-    },
-    {
-        "flightNo": "AL-203",
-        "origin": "Pune",
-        "destination": "Delhi",
-        "originCityCode": "PNQ",
-        "destinationCityCode": "DLI",
-        "time": {
-            "depart": " 08:00 AM",
-            "arrive": "10:30 AM"
-        },
-        "date": "2017-11-01",
-        "amount": "8000.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "8000.00",
+        "availabilty":"5" 
     },
     {
         "flightNo": "AL-203",
@@ -340,8 +385,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "5488.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "5488.00",
+        "availabilty":"1" 
     },
     {
         "flightNo": "AL-203",
@@ -353,8 +400,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "10000.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "10000.00",
+        "availabilty":"1" 
     },
     {
         "flightNo": "AL-203",
@@ -366,8 +415,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "9888.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "9888.00",
+        "availabilty":"2" 
     },
     {
         "flightNo": "AL-203",
@@ -379,8 +430,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "7500.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "7500.00",
+        "availabilty":"1" 
     },
     {
         "flightNo": "AL-203",
@@ -392,8 +445,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "8500.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "8500.00",
+        "availabilty":"2" 
     },
     {
         "flightNo": "AL-203",
@@ -405,8 +460,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "9500.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "9500.00",
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-203",
@@ -418,8 +475,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "6000.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "6000.00",
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-203",
@@ -431,8 +490,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "8500.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "8500.00",
+        "availabilty":"1" 
     },
     {
         "flightNo": "AL-203",
@@ -444,8 +505,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "8499.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "8499.00",
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-203",
@@ -457,8 +520,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "3400.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "3400.00",
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-203",
@@ -470,8 +535,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "5900.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "5900.00",
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-203",
@@ -483,8 +550,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "8700.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "8700.00",
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-203",
@@ -496,8 +565,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "9700.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "9700.00",
+        "availabilty":"1" 
     },
     {
         "flightNo": "AL-203",
@@ -509,8 +580,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "6800.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "6800.00",
+        "availabilty":"1" 
     },
     {
         "flightNo": "AL-203",
@@ -522,8 +595,10 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "9999.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "9999.00",
+        "availabilty":"3" 
     },
     {
         "flightNo": "AL-203",
@@ -535,7 +610,9 @@
             "depart": " 08:00 AM",
             "arrive": "10:30 AM"
         },
-        "date": "2017-11-01",
-        "amount": "6666.00"
+        "date": "2018-04-10",
+        "returndate": "2018-04-12",
+        "amount": "6666.00",
+        "availabilty":"3" 
     }
 ]

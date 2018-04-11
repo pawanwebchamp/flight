@@ -38,7 +38,7 @@
             </label>
           </li>
         </ul>
-        <form novalidate name="myForm" class="searchform">
+        <form name="myForm" class="searchform">
           <div>
             <label for="FromCity" title="From date">
               From
@@ -62,51 +62,35 @@
             <label for="DepartDate" title="Depature date">
               Depart on
             </label>
-            <!-- <input type="date" name="depart" ng-model="today" class="form-control" placeholder="Departure Date"> -->
             <md-datepicker ng-model="ctrl.myDate" md-placeholder="Enter date"></md-datepicker>
           </div>
           <div ng-show="ReturnShow">
             <label for="ReturnDate" title="Return Date">
               Return on
             </label>
-            <!-- <input type="date" name="return" class="form-control" placeholder="Return Date"> -->
             <md-datepicker ng-model="ctrl.returningDate" md-placeholder="Enter date"></md-datepicker>
           </div>
           <div>
             <label for="Passenges" title="Passenges">
               Passengers
             </label>
-            <input type="text" name="passenger" class="form-control" placeholder="Passengers">
+            <input type="text" name="passenger" ng-model="passenger" class="form-control" placeholder="Passengers">
           </div>
           <div>
             <a class="search-btn" href="#!/flight" ng-click="SearchFlight()">Search Flights</a>
           </div>
         </form>
-
       </div>
-
       <div class="range-section">
         <h3>Refine flight search</h3>
-        <!-- <input type="range" name="range" min="0" max="10000"> -->
         <md-slider-container>
           <span>0</span>
-          <md-slider flex min="0" max="10000" ng-model="color.red" aria-label="red" id="red-slider">
+          <md-slider flex min="0" max="10000" ng-model="price">
           </md-slider>
           <md-input-container>
-            <input flex type="number" ng-model="color.red" aria-label="red" aria-controls="red-slider">
+            <input flex type="number" ng-model="price">
           </md-input-container>
         </md-slider-container>
-
-
-        <!-- <md-slider ng-model="disabled1" aria-label="Disabled 1" flex md-discrete ng-readonly="readonly"></md-slider>
-  
-        <md-input-container>
-          <input flex type="number" ng-model="disabled1" aria-label="green" aria-controls="green-slider">
-        </md-input-container>
-      </md-slider-container>
-       -->
-
-
       </div>
     </div>
     <div class="right-col">
@@ -116,7 +100,6 @@
       </div>
       <div class="flight-summary" ng-view></div>
     </div>
-
 
   </div>
 </body>

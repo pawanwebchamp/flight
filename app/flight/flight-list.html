@@ -1,52 +1,51 @@
 <div ng-show="searchResult">
-  <div ng-show="loading"><img src="app/img/loading.gif"></div>
-
-  <span class="flight-info" ng-show="flightinfo">{{src}} > {{dest}} > {{src}}</span>
+  <div ng-show="loading">
+    <img src="app/img/loading.gif">
+  </div>
+  <span class="flight-info" ng-show="flightinfo && src && dest">{{src}} > {{dest}} > {{src}}</span>
   <div class="timings">
-  <span class="flight-timing">Depart: {{ctrl.myDate | date}}</span>
-  <span class="flight-timing" ng-show="ReturnShow">Return: {{ctrl.returningDate | date}}</span>
-</div>
-<div class="search-result">
-
-  <div class="flight-list" ng-show="flights.length!=0" ng-repeat="flight in flights">
-    <div class="flight-detail">
-      <h4>Rs. {{flight.amount}}</h4>
-      <ul>
-        <li>
-          <span>{{flight.flightNo}}</span>
-        </li>
-        <li>
-          <span>{{flight.originCityCode}} > {{flight.destinationCityCode}}</span>
-        </li>
-        <li>
-          <span>Depart: {{flight.time.depart}}</span>
-        </li>
-        <li>
-          <span>Arrive: {{flight.time.arrive}}</span>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span>{{flight.flightNo}}</span>
-        </li>
-        <li>
-          <span>{{flight.destinationCityCode}} > {{flight.originCityCode}}</span>
-        </li>
-        <li>
-          <span>Depart: {{flight.time.depart}}</span>
-        </li>
-        <li>
-          <span>Arrive: {{flight.time.arrive}}</span>
-        </li>
-      </ul>
-
+    <span class="flight-timing">Depart: {{ctrl.myDate | date}}</span>
+    <span class="flight-timing" ng-show="ReturnShow && src">Return: {{ctrl.returningDate | date}}</span>
+  </div>
+  <div class="search-result">
+    <div class="flight-list" ng-show="flights.length!=0" ng-repeat="flight in flights">
+      <div class="flight-detail">
+        <h4>Rs. {{flight.amount}}</h4>
+        <ul>
+          <li>
+            <span>{{flight.flightNo}}</span>
+          </li>
+          <li>
+            <span>{{flight.originCityCode}} > {{flight.destinationCityCode}}</span>
+          </li>
+          <li>
+            <span>Depart: {{flight.time.depart}}</span>
+          </li>
+          <li>
+            <span>Arrive: {{flight.time.arrive}}</span>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span>{{flight.flightNo}}</span>
+          </li>
+          <li>
+            <span>{{flight.destinationCityCode}} > {{flight.originCityCode}}</span>
+          </li>
+          <li>
+            <span>Depart: {{flight.time.depart}}</span>
+          </li>
+          <li>
+            <span>Arrive: {{flight.time.arrive}}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="thumbnail">
+        <img ng-src="app/img/icon.png">
+        <button class="search-btn">Book this flight</button>
+      </div>
     </div>
-    <div class="thumbnail">
-      <img ng-src="app/img/icon.png">
-      <button class="search-btn">Book this flight</button>
+    <div class="noData" ng-show="flights.length==0">
+      <h1>Sorry! No Flight Found.</h1>
     </div>
   </div>
-
-
-  <div class="noData" ng-show="flights.length==0"><h1>Sorry! No Flight Found.</h1></div>
-</div>

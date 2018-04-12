@@ -38,13 +38,14 @@
             </label>
           </li>
         </ul>
-        <form name="myForm" class="searchform">
+        <form class="searchform" name="myForm" novalidate>
           <div>
             <label for="FromCity" title="From date">
               From
             </label>
             <input type="text" name="origin" class="form-control" placeholder="Enter Origin City" ng-model="src" ng-keyup="complete(src)"
               required>
+              <span ng-show="myForm.origin.$error.required">Please Enter Origin</span>
             <ul class="list-group">
               <li class="list-group-item" ng-repeat="citydata in filterCity" ng-click="fillTextbox(citydata)">{{citydata}}</li>
             </ul>
@@ -53,7 +54,8 @@
             <label for="ToCity" title="ToCity">
               To
             </label>
-            <input type="text" name="destination" class="form-control" placeholder="Enter Destination City" ng-model="dest" ng-keyup="retcomplete(dest)">
+            <input type="text" name="destination" class="form-control" placeholder="Enter Destination City" ng-model="dest" ng-keyup="retcomplete(dest)" required>
+            <span ng-show="myForm.destination.$error.required">Please Enter Destination</span>
             <ul class="list-group">
               <li class="list-group-item" ng-repeat="returncitydata in filterReturnCity" ng-click="returnfillTextbox(returncitydata)">{{returncitydata}}</li>
             </ul>
@@ -74,10 +76,11 @@
             <label for="Passenges" title="Passenges">
               Passengers
             </label>
-            <input type="text" name="passenger" ng-model="passenger" class="form-control" placeholder="Passengers">
+            <input type="text" name="passenger" ng-model="passenger" class="form-control" placeholder="Passengers" required>
+            <span ng-show="myForm.passenger.$error.required">Please Enter Passenger between 1 to 5</span>
           </div>
           <div>
-            <a class="search-btn" href="#!/flight" ng-click="SearchFlight()">Search Flights</a>
+            <button class="search-btn" href="#!/flight" ng-click="SearchFlight()" ng-disabled="myForm.$invalid">Search Flights</button>
           </div>
         </form>
       </div>
@@ -85,10 +88,10 @@
         <h3>Refine flight search</h3>
         <md-slider-container>
           <span>0</span>
-          <md-slider flex min="0" max="10000" ng-model="price">
+          <md-slider flex min="0" max="10000" ng-model="price" aria-label="price">
           </md-slider>
           <md-input-container>
-            <input flex type="number" ng-model="price">
+            <input flex type="number" ng-model="price" aria-label="price">
           </md-input-container>
         </md-slider-container>
       </div>
